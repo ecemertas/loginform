@@ -1,0 +1,188 @@
+$font-stack: Gill Sans, sans-serif;
+@mixin center-element {
+    justify-content: center;
+    align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:black;
+    height: 1px;
+    opacity: 20%;
+  }
+body 
+{
+    font: $font-stack;
+    display: flex;
+    @include center-element;
+    background-color: #acb7bd;
+}
+
+.container {
+    margin-top: 5rem;
+    background-color: aliceblue;
+    padding: 1rem 3rem;
+    flex-direction: column;
+    @include center-element;
+    width: fit-content;
+    border-radius: 12px;
+
+        h2 {
+
+    @include center-element;
+    font-size:2rem;
+    margin-bottom: 2rem;
+
+        }
+        form {
+
+    @include center-element;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+        }
+
+        form i {
+
+    font-size: 1rem;
+        }
+
+        .forgotPassword {
+            cursor: pointer;
+            bottom: 17rem;
+            color: rgb(113, 119, 124);
+            font-size: .7rem;
+            border: none;
+            background-color:aliceblue;
+        
+        }
+
+}
+
+
+.inputDiv {
+
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+ border:none;
+ background-color:aliceblue;
+ margin-bottom: 1rem;
+}
+
+input:focus {
+    outline: none;
+    transform:translateX(.1rem);
+    transition: .25s ease-in-out;
+    border-bottom: 2px solid #9b7dc7;
+}
+
+
+.username{
+    margin-bottom: 1rem;
+}
+
+
+
+.loginBtn {
+    
+    font-size: 1rem;
+    background: #9b7dc7;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    padding: .5rem 7rem;
+    
+
+}
+
+.loginBtn:hover {
+    transition: 80ms;
+    background-color: #745d95;
+}
+
+.formBottom {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    @include center-element;
+
+    ul {
+        margin-bottom: 3rem;
+
+        }
+       
+    p {
+        margin-top: 2rem;
+        font-size: .8rem;
+     }
+
+    a
+     {
+        text-decoration: none;
+     }
+
+    }
+
+
+.websites {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0rem;
+    
+    a {
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    }
+    li {
+
+    list-style: none;
+    }   
+
+    li i {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+}
+.fa-brands {
+    cursor: pointer;
+    color: white;
+    padding: .5rem;
+    border-radius: 50%;
+
+
+}
+
+.fa-google {
+    background-color: orange;
+}
+
+.fa-facebook-f {
+    background-color: #4267B2;
+}
+
+.fa-twitter {
+    background-color: #1DA1F2;
+}
+
